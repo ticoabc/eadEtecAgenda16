@@ -4,9 +4,175 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon"
+        href="https://cdn.icon-icons.com/icons2/3456/PNG/512/curriculum_vitae_paper_document_icon_219537.png"
+        type="image/x-icon">
     <title>Agenda 16</title>
-</head>
-<body>
+    <style>
+        /* Definimos que a sidebar terá uma largura de 120px e cor a cord de fundo #222*/
+        .w3-sidebar {
+            width: 120px;
+            background: #222;
+        }
     
+        /*Define Fonte para todas as tags listadas abaixo*/
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Montserrat", sans-serif
+        }
+    
+        /*Configurações para que a divisão main não fique em baixo da sidebar*/
+        #main {
+            margin-left: 120px;
+        }
+    
+        /*Configurações para uma melhor organização das imagens*/
+        .w3-row-padding img {
+            margin-bottom: 12px;
+        }
+    
+        /* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+        @media only screen and (max-width: 600px) {
+            #main {
+                margin-left: 0
+            }
+        }
+    </style>
+</head>
+<body class="w3-black">
+    
+    <!--SideBar-->
+    <nav class="w3-sidebar w3-bar-block w3-center w3-hide-small">
+        <!-- HOME -->
+        <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-cyan w3-text-white">
+            <i class="fa fa-home w3-xxlarge"></i>
+            <p>Home</p>
+        </a>
+        <!-- Exercicios -->
+        <a href="#exercicios" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-cyan w3-text-white">
+            <i class="fa fa-user w3-xxlarge"></i>
+            <p>Exercícios</p>
+        </a>
+
+        <!-- Tecnologias -->
+        <a href="#tecnologias"
+            class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-cyan w3-text-white">
+            <i class="fa fa-connectdevelop w3-xxlarge "></i>
+            <p>Tecnologias</p>
+        </a>
+        <!-- Contato -->
+        <a href="#contato" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-cyan w3-text-white">
+            <i class="fa fa-envelope w3-xxlarge"></i>
+            <p>Contato</p>
+        </a>
+    </nav>
+
+    <!--NavBar-->
+    <div class="w3-top w3-hide-large w3-hide-medium">
+        <nav class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+            <a href="#home" class="w3-bar-item w3-button" style="width:25% ">HOME</a>
+            <a href="#exercicios" class="w3-bar-item w3-button" style="width:25% ">Exercicios</a>
+            <a href="#tecnologias" class="w3-bar-item w3-button" style="width:27%">Tecnologias</a>
+            <a href="#contato" class="w3-bar-item w3-button" style="width:23%">Contato</a>
+        </nav>
+    </div>
+
+    <!--Conteúdo da Página -->
+    <div class="w3-padding-large" id="main">
+        <!--Home -->
+        <header class="w3-container w3-padding-32 w3-center " id="home">
+            <h1>
+                <img src="img/logoCab.png" alt="Logo CPS GEEAD SP" class="w3-image" width="50%">
+            </h1>
+            <br>
+            <h1>
+                <img src="img/logoDS.png" alt="Desenvolvimento de Sistemas" class="w3-image" width="70%">
+            </h1>
+        </header>
+        <!-- Exercicios -->
+        <div class="w3-content w3-padding-64" id="exercicios">
+            <h2 class="w3-text-cyan">Sobre a Agenda 16</h2>
+            <hr style="width:260px" class="w3-opacity">
+            <ul class="w3-ul w3-hoverable w3-center w3-white">
+                <li class="w3-cyan w3-xlarge w3-padding-32">Exercicios</li>
+                <li class="w3-padding-16"><a href="jsInline.html" target="_blank" rel="noopener noreferrer">Exercicio - Inline - jsinline</a></li>
+                <li class="w3-padding-16"><a href="jsInterno.html" target="_blank" rel="noopener noreferrer">Exercicio - Interno - jsInterno</a></li>
+                <li class="w3-padding-16"><a href="jsExterno.html" target="_blank" rel="noopener noreferrer">Exercicio - Externo - jsExterno</a></li>
+                <li class="w3-padding-16"><a href="automaticoSlideShow.html" target="_blank" rel="noopener noreferrer">Exercicio - SlideShow - SlideShow Automático</a></li>
+                <li class="w3-padding-16"><a href="manualSlideShow.html" target="_blank" rel="noopener noreferrer">Exercicio - SlideShow - SlideShow Manual</a></li>
+                <li class="w3-padding-16"><a href="voceNoComando.html" target="_blank" rel="noopener noreferrer">Exercicio - Você no Comando!</a></li>
+                <li class="w3-padding-16"><a href="docenteSlide.html" target="_blank" rel="noopener noreferrer">Atividade!</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Tecnologias -->
+    <div class="w3-padding-64 w3-content" id="tecnologias">
+    <h2 class="w3-text-cyan">Tecnologias Utilizadas na Agenda 16</h2>
+    <hr style="width:490px" class="w3-opacity">
+    <div class="w3-row w3-row-padding">
+        <div class="w3-third">
+            <a href="https://www.w3schools.com/html/default.asp" target="_blank">
+                <img src="https://cdn.icon-icons.com/icons2/1488/PNG/512/5352-html5_102567.png"
+                    style="width:50%" class="w3-opacity w3-hoveropacity-off">
+            </a>
+        </div>
+        <div class="w3-third">
+            <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">
+                <img src="https://cdn.icon-icons.com/icons2/844/PNG/512/CSS3_icon-icons.com_67069.png" 
+                    style="width:50%" class="w3-opacity w3-hoveropacity-off">
+            </a>
+        </div>
+        <div class="w3-third">
+            <a href="https://www.w3schools.com/js/default.asp" target="_blank">
+                <img src="https://cdn.icon-icons.com/icons2/1504/PNG/512/textxjavascript_103696.png"
+                    style="width:50%" class="w3-opacity w3-hoveropacity-off">
+            </a>
+        </div>
+    </div>
+    </div>
+
+    <!-- Contato -->
+    <div class="w3-padding-128 w3-content w3-text-grey" id="contato">
+        <h2 class="w3-text-cyan">Contato</h2>
+        <hr style="width:100px" class="w3-opacity">
+        <div class="w3-section">
+            <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-marginright"></i> São Paulo, Brasil</p>
+            <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-marginright"></i> Telefone: 11 3333-3333</p>
+            <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-marginright"> </i> Email: ds@cps.sp.gov.br</p>
+        </div>
+    </div><br>
+
+    <!--Rodapé-->
+    <footer class="w3-content w3-padding-64 w3-text-cyan w3-xlarge w3-center">
+        <a href="http://geead.cps.sp.gov.br/" target="_blank">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        </a>
+        <a href="http://geead.cps.sp.gov.br/" target="_blank">
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+        </a>
+        <a href="http://geead.cps.sp.gov.br/" target="_blank">
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+        </a>
+        <a href="http://geead.cps.sp.gov.br/" target="_blank">
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        </a>
+        <a href="http://geead.cps.sp.gov.br/" target="_blank">
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+        </a>
+        <a href="http://geead.cps.sp.gov.br/" target="_blank">
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </a>
+        <p class="w3-medium">&#169;2023 Powered by
+            <a href="http://geead.cps.sp.gov.br/" target="_blank" class="">GEEAD</a>
+        </p>
+    </footer>
 </body>
 </html>
